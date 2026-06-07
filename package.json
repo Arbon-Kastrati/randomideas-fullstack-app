@@ -1,0 +1,33 @@
+{
+    "name": "randomideas-fullstack-app",
+    "version": "1.0.0",
+    "description": "Fullstack app for storing and managing ideas build with expressjs and webpack vanilla js",
+    "keywords": [
+        "Ideas",
+        "Fullstack",
+        "ExpressJs",
+        "NodeJs",
+        "Webpack",
+        "Vanilla",
+        "JS"
+    ],
+    "homepage": "https://github.com/Arbon-Kastrati/randomideas-fullstack-app#readme",
+    "bugs": {
+        "url": "https://github.com/Arbon-Kastrati/randomideas-fullstack-app/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Arbon-Kastrati/randomideas-fullstack-app.git"
+    },
+    "license": "MIT",
+    "author": "Arbon Kastrati",
+    "type": "module",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server",
+        "dev": "node --env-file=.env.development --watch server"
+    },
+    "dependencies": {
+        "express": "^5.2.1"
+    }
+}
