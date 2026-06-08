@@ -1,8 +1,22 @@
 import express from 'express';
+import ideas from './routes/ideas.js';
+import connectDB from './config/db.js';
+
+const PORT = process.env.PORT || 5000;
 
 const app = express();
-const port = process.env.PORT || 5000;
+await connectDB();
 
-app.listen(port, () => {
-    console.log(`Server listening on port ${port}`);
+app.use((req, res, next) => {
+    console.log(`Method:${req.method}, URL: ${req.originalUrl} `);
+    next();
+});
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
+//use routes
+app.use('/api/ideas', ideas);
+app.listen(PORT, () => {
+    console.log(`Server listening on PORT ${PORT}`);
 });
