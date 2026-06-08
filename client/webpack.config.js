@@ -1,12 +1,11 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-console.log(__dirname);
 module.exports = {
     mode: 'development',
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, './public'),
+        path: path.resolve(__dirname, '../public'),
         filename: 'bundle.js',
     },
     devServer: {
@@ -39,7 +38,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebPackPlugin({
-            title: 'Webpack App',
+            title: 'RandomIdeas',
             filename: 'index.html',
             template: './src/index.html',
         }),

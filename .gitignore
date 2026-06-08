@@ -4,3 +4,6 @@ client/node_modules
 
 #environment variables
 .env.development
+
+#results of webpack build
+public/
