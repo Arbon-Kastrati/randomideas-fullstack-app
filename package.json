@@ -28,6 +28,7 @@
         "dev": "node --env-file=.env.development --watch server"
     },
     "dependencies": {
+        "cors": "^2.8.6",
         "express": "^5.2.1",
         "mongoose": "^9.6.3"
     }
