@@ -63,7 +63,7 @@ header {
 
 form input,
 form textarea {
-    width: 95%;
+    width: 96%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -164,6 +164,49 @@ form label {
 
 .delete:hover {
     color: #000;
+}
+
+.alert {
+    display: none;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.alert-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-show {
+    display: block;
+}
+
+.edit {
+    position: absolute;
+    top: 12px;
+    right: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    color: green;
+    background: none;
+    border: none;
 }
 
 .date {

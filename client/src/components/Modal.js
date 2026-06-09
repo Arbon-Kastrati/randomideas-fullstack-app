@@ -17,6 +17,7 @@ class Modal {
 
     close() {
         this.modal.style.display = 'none';
+        document.dispatchEvent(new Event('resetform'));
     }
 
     outsideClick(e) {
